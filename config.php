@@ -12,3 +12,4 @@ $THEME->enable_dock = false;
 $THEME->yuicssmodules = array();
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->csspostprocess = 'theme_boost_css_postprocess';
+$THEME->haseditswitch = false;
