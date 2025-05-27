@@ -25,3 +25,77 @@ a:focus, button:focus, input:focus, textarea:focus {
     white-space: nowrap;
     border: 0;
 }
+
+body.role-student {
+
+  /* Skryje levý a pravý postranní panel (zásuvky, bloky) */
+  #nav-drawer,
+  #block-region-side-pre,
+  #block-region-side-post {
+    display: none !important;
+  }
+
+  /* Zruší mezery po skrytí zásuvek */
+  #page.drawers #page-content {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .drawer.drawer-left.show, .drawer.drawer-right.show {
+    visibility: hidden;
+    display: none;
+}
+
+
+
+  /* Skryje breadcrumb (navigační lištu nahoře) */
+  .breadcrumb-nav,
+  nav.breadcrumb,
+  .breadcrumb {
+    display: none !important;
+  }
+
+  /* Skryje horní záložky (např. Přehled, Pokus atd.) */
+  .nav-tabs,
+  .secondary-navigation,
+  .tabtree {
+    display: none !important;
+  }
+
+  /* Skryje hlavní menu navigace */
+  #region-main-settings-menu,
+  .page-context-header,
+  .action-menu {
+    display: none !important;
+  }
+
+  /* Skryje ikony v hlavičce a notifikace */
+  .usermenu,
+  .nav-link,
+  .navbar-nav,
+  .notifications,
+  .dropdown-toggle {
+    display: none !important;
+  }
+
+  /* Skryje navigační hlavičku úplně */
+  .navbar,
+  .header-main,
+  #page-header {
+    display: none !important;
+  }
+
+  /* Volitelně můžeš skrýt patičku stránky */
+  footer#page-footer {
+    display: none !important;
+  }
+
+  /* Omezí šířku hlavního obsahu na celou šířku */
+  #region-main-box,
+  #region-main {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+}
+
+
