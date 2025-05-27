@@ -25,6 +25,17 @@ body.role-student {
     background-color: #f179f1 !important;
     color: #000000 !important;
 
+
+    [aria-hidden="true"] {
+        display: none !important;
+    }
+
+    #topofscroll {max-width: 100% !important;}
+
+.activity-navigation {
+    display: none !important;
+}
+
   /* Skryje levý a pravý postranní panel (zásuvky, bloky) */
   #nav-drawer,
   #block-region-side-pre,
@@ -33,10 +44,11 @@ body.role-student {
   }
 
   /* Zruší mezery po skrytí zásuvek */
-  #page.drawers #page-content {
+  #page.drawers #page-content, #page.drawers.show-drawer-left.show-drawer-right {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+
 
   .drawer.drawer-left.show, .drawer.drawer-right.show {
     visibility: hidden;
