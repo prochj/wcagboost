@@ -1,10 +1,4 @@
 /* WCAG basic enhancements */
-body {
-    font-size: 18px !important;
-    background-color: #f179f1 !important;
-    color: #000000 !important;
-}
-
 a {
     color: #004080 !important;
     text-decoration: underline !important;
@@ -27,6 +21,9 @@ a:focus, button:focus, input:focus, textarea:focus {
 }
 
 body.role-student {
+ font-size: 18px !important;
+    background-color: #f179f1 !important;
+    color: #000000 !important;
 
   /* Skryje levý a pravý postranní panel (zásuvky, bloky) */
   #nav-drawer,
@@ -46,7 +43,14 @@ body.role-student {
     display: none;
 }
 
+  /* Skryje info panely s vlaječjkami u testu */ 
+form .info  {
+    display: none !important;
+}
 
+form .content {
+    margin: 0 !important;
+}
 
   /* Skryje breadcrumb (navigační lištu nahoře) */
   .breadcrumb-nav,
